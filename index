@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Modern - Beranda E-commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" xintegrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: url('https://placehold.co/1600x800/e2e8f0/4a5568?text=Produk+Unggulan');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">Toko<span class="text-indigo-600">Ku</span></a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition duration-300">Beranda</a>
+                <a href="#produk" class="text-gray-600 hover:text-indigo-600 transition duration-300">Produk</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition duration-300">Tentang Kami</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition duration-300">Kontak</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition duration-300">
+                    <i class="fas fa-shopping-cart fa-lg"></i>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition duration-300">
+                    <i class="fas fa-user-circle fa-lg"></i>
+                </a>
+                <button id="menu-btn" class="md:hidden text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+            <a href="#" class="block py-2 text-gray-600 hover:text-indigo-600">Beranda</a>
+            <a href="#produk" class="block py-2 text-gray-600 hover:text-indigo-600">Produk</a>
+            <a href="#" class="block py-2 text-gray-600 hover:text-indigo-600">Tentang Kami</a>
+            <a href="#" class="block py-2 text-gray-600 hover:text-indigo-600">Kontak</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg h-[60vh] text-white flex items-center">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 text-shadow-lg">Koleksi Terbaru Telah Tiba</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Temukan gaya terbaik Anda dengan produk-produk pilihan kami.</p>
+                <a href="#produk" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                    Belanja Sekarang
+                </a>
+            </div>
+        </section>
+
+        <!-- Product Section -->
+        <section id="produk" class="py-16">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-10">Produk Pilihan Kami</h2>
+                <div id="product-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Product items will be injected here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="bg-indigo-50 py-16">
+            <div class="container mx-auto px-6 text-center">
+                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Mengapa Memilih Kami?</h2>
+                 <p class="text-gray-600 max-w-3xl mx-auto mb-12">Kami berkomitmen untuk menyediakan produk berkualitas tinggi dengan layanan pelanggan terbaik.</p>
+                 <div class="flex flex-wrap justify-center gap-8">
+                     <div class="w-full sm:w-1/2 md:w-1/4 p-4">
+                         <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <i class="fas fa-shipping-fast text-indigo-600 text-4xl mb-4"></i>
+                            <h3 class="font-bold text-lg mb-2">Pengiriman Cepat</h3>
+                            <p class="text-gray-600 text-sm">Pesanan Anda akan tiba dengan cepat dan aman.</p>
+                         </div>
+                     </div>
+                      <div class="w-full sm:w-1/2 md:w-1/4 p-4">
+                         <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <i class="fas fa-medal text-indigo-600 text-4xl mb-4"></i>
+                            <h3 class="font-bold text-lg mb-2">Kualitas Terjamin</h3>
+                            <p class="text-gray-600 text-sm">Produk asli dengan kualitas terbaik di kelasnya.</p>
+                         </div>
+                     </div>
+                      <div class="w-full sm:w-1/2 md:w-1/4 p-4">
+                         <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <i class="fas fa-headset text-indigo-600 text-4xl mb-4"></i>
+                            <h3 class="font-bold text-lg mb-2">Dukungan 24/7</h3>
+                            <p class="text-gray-600 text-sm">Tim kami siap membantu Anda kapan saja.</p>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 TokoKu. Semua hak dilindungi.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-5 right-5 bg-green-500 text-white py-2 px-4 rounded-lg shadow-lg transition-opacity duration-300 opacity-0">
+        Produk ditambahkan ke keranjang!
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Product Data
+        const products = [
+            {
+                id: 1,
+                name: 'Kemeja Casual Pria',
+                price: 'Rp 250.000',
+                image: 'https://placehold.co/400x400/f3f4f6/4a5568?text=Kemeja'
+            },
+            {
+                id: 2,
+                name: 'Sepatu Sneakers Wanita',
+                price: 'Rp 450.000',
+                image: 'https://placehold.co/400x400/e2e8f0/4a5568?text=Sepatu'
+            },
+            {
+                id: 3,
+                name: 'Jam Tangan Elegan',
+                price: 'Rp 750.000',
+                image: 'https://placehold.co/400x400/d1d5db/4a5568?text=Jam+Tangan'
+            },
+            {
+                id: 4,
+                name: 'Tas Ransel Modern',
+                price: 'Rp 350.000',
+                image: 'https://placehold.co/400x400/9ca3af/4a5568?text=Tas'
+            },
+             {
+                id: 5,
+                name: 'Celana Jeans Denim',
+                price: 'Rp 400.000',
+                image: 'https://placehold.co/400x400/6b7280/ffffff?text=Jeans'
+            },
+            {
+                id: 6,
+                name: 'Topi Baseball Keren',
+                price: 'Rp 150.000',
+                image: 'https://placehold.co/400x400/4b5563/ffffff?text=Topi'
+            },
+            {
+                id: 7,
+                name: 'Kacamata Hitam Stylish',
+                price: 'Rp 200.000',
+                image: 'https://placehold.co/400x400/374151/ffffff?text=Kacamata'
+            },
+            {
+                id: 8,
+                name: 'Hoodie Nyaman',
+                price: 'Rp 320.000',
+                image: 'https://placehold.co/400x400/1f2937/ffffff?text=Hoodie'
+            },
+        ];
+
+        // Populate product list
+        const productList = document.getElementById('product-list');
+        products.forEach(product => {
+            const productCard = `
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="${product.image}" alt="${product.name}" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2">${product.name}</h3>
+                        <p class="text-indigo-600 font-bold mb-4">${product.price}</p>
+                        <button class="add-to-cart-btn w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition duration-300">
+                            <i class="fas fa-cart-plus mr-2"></i>Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            `;
+            productList.innerHTML += productCard;
+        });
+
+        // Add to cart functionality
+        const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+        const toast = document.getElementById('toast');
+
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                toast.classList.remove('opacity-0');
+                setTimeout(() => {
+                    toast.classList.add('opacity-0');
+                }, 2000);
+            });
+        });
+
+    </script>
+</body>
+</html>
